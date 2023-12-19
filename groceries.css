@@ -1,0 +1,174 @@
+body {
+    /* width: auto; */
+    margin: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+header {
+    background-color: white;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#menu-left {
+    display: flex;
+    align-items: center;
+
+}
+
+#menu-left div {
+    margin-right: 20px;
+    /* Add some space between the logo and links */
+
+}
+
+#menu-right {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #6f4f4f;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+}
+
+#flex-container {
+    display: flex;
+    background-color: whitesmoke;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.left_flex {
+    flex: 2;
+    border-right: 0.2px solid;
+}
+
+.left_block {
+
+    object-fit: cover;
+    margin: auto;
+    padding: 10%;
+
+}
+
+.search_box {
+    padding: 13px;
+}
+
+button {
+    background-color: #76aa04;
+    border: none;
+    color: white;
+    padding: 13px;
+    ;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5%;
+    font-family: cursive;
+
+
+}
+
+.vertical_grid {
+    display: grid;
+   justify-content: space-around;
+    /* Single column layout */
+    gap: 16px;
+    /* Adjust the gap between items */
+    padding: 16px;
+    /* Add padding for spacing */
+    object-fit: cover;
+    margin: auto;
+}
+
+.photo_div {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.photo {
+    width: 300px;
+}
+
+.right_flex {
+    flex: 8;
+    padding-left: 60px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    /* Adjust the gap between items */
+    padding: 16px;
+    /* Add padding for spacing */
+}
+
+.grid-item {
+    width: 300px;
+    height: 410px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    object-fit: cover;
+    margin-top: 60px;
+}
+
+.grid-item img {
+    width: 300px;
+}
+
+.card_body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.card_body h3 {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.card_body h4 {
+    color: #9a8e8e;
+    margin-top: 5px;
+    padding: 0;
+
+
+}
+
+.grid-item:hover {
+    transform: scale(1.1);
+}
